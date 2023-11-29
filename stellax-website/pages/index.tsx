@@ -1,118 +1,215 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 
+import NavBar from './navbar'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+  <main className="bg-zinc-900">
+    <div className="w-96 h-96 left-[1800.24px] top-[3130.31px] absolute origin-top-left rotate-[-125.63deg] bg-gradient-to-b from-indigo-600 to-indigo-600 rounded-full blur-3xl" />
+    <div className="w-96 h-96 left-[998.44px] top-[305px] absolute origin-top-left rotate-[65.71deg] bg-gradient-to-b from-amber-500 to-pink-500 rounded-full blur-3xl" />
+    <div className="w-96 h-96 left-[1663.79px] top-[1759px] absolute origin-top-left rotate-[65.71deg] bg-gradient-to-b from-amber-500 to-pink-500 rounded-full blur-3xl" />
+    <div className="w-96 h-96 left-[-401.52px] top-[231.97px] absolute origin-top-left rotate-[-54.37deg] bg-gradient-to-b from-indigo-600 to-indigo-600 rounded-full blur-3xl" />
+    <NavBar/>
+    <div className="w-96 h-96 left-[120px] top-[230px] absolute">
+        <p className="w-96 left-0 top-0 absolute text-white text-7xl font-normal font-['Denk One'] leading-12">Build Your Awesome Platform</p>
+        <p className="w-96 left-[3px] top-[276px] absolute text-white text-opacity-70 text-xl font-normal font-['Nunito Sans'] leading-10">StellaX Technologies is an agency that offers several services such as UI/UX Design to developers, we will provide the best service for those of you who use our services.</p>
+    </div>
+    
+    <div className="h-96 left-[120px] top-[971px] absolute">
+        <div className="w-96 h-96 left-0 top-[190px] absolute">
+            <Image className="left-0 top-0 absolute" src="/stellax-website\public\meeting.png" alt="Video PlaceHolder" width={384} height={384}/>
+            <div className="w-32 h-32 left-[538px] top-[273px] absolute">
+            </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <div className="w-96 h-36 left-0 top-0 absolute">
+            <div className="w-96 left-[612px] top-0 absolute text-white text-opacity-70 text-xl font-normal font-['Nunito Sans'] leading-10">Watch this one minute video so you understand why you should use our services!</div>
+            <div className="w-96 left-0 top-0 absolute text-white text-6xl font-normal font-['Denk One'] leading-12">Why StellaX Is The Best Choice?</div>
+        </div>
+    </div>
+    <div className="w-96 h-96 left-0 top-[3737px] absolute">
+        <div className="w-96 h-96 left-0 top-0 absolute bg-zinc-900 bg-opacity-50" />
+        <div className="w-96 left-[120px] top-[187px] absolute text-white text-6xl font-normal font-['Denk One']">Contact us for the service you want to use</div>
+        <div className="w-52 h-14 left-[1119px] top-[223px] absolute rounded">
+            <div className="w-52 h-14 left-0 top-0 absolute bg-indigo-600 rounded" />
+            <div className="w-52 left-0 top-[17px] absolute text-center text-white text-xl font-bold font-['Nunito Sans']">Contact us</div>
+        </div>
+    </div>
+    <div className="w-96 h-10 left-[120px] top-[4293px] absolute">
+        <div className="w-44 h-10 left-0 top-0 absolute">
+            <div className="left-[48px] top-0 absolute text-white text-3xl font-bold font-['Montserrat'] leading-10">STELLAX</div>
+            <img className="w-10 h-10 left-0 top-0 absolute" src="https://via.placeholder.com/40x40" />
+        </div>
+        <div className="w-96 h-6 left-[384px] top-[7px] absolute">
+            <div className="left-0 top-0 absolute text-center text-white text-opacity-70 text-lg font-normal font-['Nunito Sans']">Support</div>
+            <div className="left-[106px] top-0 absolute text-center text-white text-opacity-70 text-lg font-normal font-['Nunito Sans']">Privacy Policy</div>
+            <div className="left-[257px] top-0 absolute text-center text-white text-opacity-70 text-lg font-normal font-['Nunito Sans']">Terms and Conditions</div>
+        </div>
+        <div className="w-72 left-[915px] top-[1px] absolute text-right text-white text-opacity-70 text-base font-normal font-['Nunito Sans'] leading-9">© 2023 StellaX, All Rights Reserved</div>
+    </div>
+    <div className="w-52 h-14 left-[123px] top-[673px] absolute">
+        <div className="w-52 h-14 left-0 top-0 absolute bg-indigo-600 rounded" />
+        <div className="w-36 h-7 left-[27px] top-[16px] absolute justify-center items-center gap-2 inline-flex">
+            <div className="text-white text-xl font-bold font-['Nunito Sans']">Our Services</div>
+            <div className="w-6 h-6 relative" />
+        </div>
+    </div>
+    <div className="w-96 left-[120px] top-[1981px] absolute">
+        <div className="w-96 h-96 left-0 top-[190px] absolute">
+            <div className="w-96 h-72 left-0 top-0 absolute">
+                <div className="w-96 h-72 left-[408px] top-0 absolute">
+                    <div className="w-96 h-72 left-0 top-0 absolute" />
+                    <div className="w-72 h-52 left-[43px] top-[48px] absolute">
+                        <div className="w-72 h-28 left-0 top-[89px] absolute">
+                            <div className="w-48 left-[50px] top-0 absolute text-center"><span className="text-white text-3xl font-semibold font-['Nunito Sans']">UI/UX D</span><span className="text-white text-3xl font-semibold font-['Nunito Sans']">e</span><span className="text-white text-3xl font-semibold font-['Nunito Sans']">signer</span></div>
+                            <div className="w-72 left-0 top-[58px] absolute text-center text-white text-opacity-70 text-xl font-normal font-['Nunito Sans'] leading-7">We provide UI/UX Design services, and of course with the best quality</div>
+                        </div>
+                        <div className="w-16 h-16 left-[115px] top-0 absolute">
+                            <div className="w-8 h-8 left-[19px] top-[18px] absolute justify-center items-center inline-flex">
+                                <div className="w-8 h-8 relative">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-96 h-72 left-[816px] top-0 absolute">
+                    <div className="w-96 h-72 left-0 top-0 absolute" />
+                    <div className="w-72 h-52 left-[43px] top-[48px] absolute">
+                        <div className="w-72 h-28 left-0 top-[89px] absolute">
+                            <div className="left-[44px] top-0 absolute text-center"><span className="text-white text-3xl font-semibold font-['Nunito Sans']">Graphic Designe</span><span className="text-white text-3xl font-semibold font-['Nunito Sans']">r</span></div>
+                            <div className="w-72 left-0 top-[58px] absolute text-center text-white text-opacity-70 text-xl font-normal font-['Nunito Sans'] leading-7">We provide Graphic Design services, with the best designers</div>
+                        </div>
+                        <div className="w-16 h-16 left-[115px] top-0 absolute">
+                            <div className="w-8 h-8 left-[19px] top-[18px] absolute justify-center items-center inline-flex">
+                                <div className="w-8 h-8 relative">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-96 h-72 left-0 top-0 absolute">
+                    <div className="w-96 h-72 left-0 top-0 absolute" />
+                    <div className="w-72 h-52 left-[43px] top-[48px] absolute">
+                        <div className="w-72 h-28 left-0 top-[89px] absolute">
+                            <div className="w-48 left-[50px] top-0 absolute text-center"><span className="text-white text-3xl font-semibold font-['Nunito Sans']">Developm</span><span className="text-white text-3xl font-semibold font-['Nunito Sans']">e</span><span className="text-white text-3xl font-semibold font-['Nunito Sans']">nt</span></div>
+                            <div className="w-72 left-0 top-[58px] absolute text-center text-white text-opacity-70 text-xl font-normal font-['Nunito Sans'] leading-7">Create a platform with the best and coolest quality from us.</div>
+                        </div>
+                        <div className="w-16 h-16 left-[115px] top-0 absolute">
+                            <div className="w-8 h-8 left-[19px] top-[18px] absolute justify-center items-center inline-flex">
+                                <div className="w-8 h-8 relative">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="w-96 h-72 left-0 top-[324px] absolute">
+                <div className="w-96 h-72 left-[816px] top-0 absolute">
+                    <div className="w-96 h-72 left-0 top-0 absolute" />
+                    <div className="w-72 h-52 left-[43px] top-[48px] absolute">
+                        <div className="w-72 h-28 left-0 top-[89px] absolute">
+                            <div className="left-[68px] top-0 absolute text-center text-white text-3xl font-semibold font-['Nunito Sans']">Videography</div>
+                            <div className="w-72 left-0 top-[58px] absolute text-center text-white text-opacity-70 text-xl font-normal font-['Nunito Sans'] leading-7">Create a platform with the best and coolest quality from us.</div>
+                        </div>
+                        <div className="w-16 h-16 left-[115px] top-0 absolute">
+                            <div className="w-8 h-8 left-[19px] top-[18px] absolute justify-center items-center inline-flex">
+                                <div className="w-8 h-8 relative">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-96 h-72 left-0 top-0 absolute">
+                    <div className="w-96 h-72 left-0 top-0 absolute" />
+                    <div className="w-72 h-52 left-[43px] top-[48px] absolute">
+                        <div className="w-72 h-28 left-0 top-[89px] absolute">
+                            <div className="left-[52px] top-0 absolute text-center text-white text-3xl font-semibold font-['Nunito Sans']">Motion Graphic</div>
+                            <div className="w-72 left-0 top-[58px] absolute text-center text-white text-opacity-70 text-xl font-normal font-['Nunito Sans'] leading-7">Create a platform with the best and coolest quality from us.</div>
+                        </div>
+                        <div className="w-16 h-16 left-[115px] top-0 absolute">
+                            <div className="w-8 h-8 left-[19px] top-[18px] absolute justify-center items-center inline-flex">
+                                <div className="w-8 h-8 relative">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-96 h-72 left-[408px] top-0 absolute">
+                    <div className="w-96 h-72 left-0 top-0 absolute" />
+                    <div className="w-72 h-52 left-[43px] top-[48px] absolute">
+                        <div className="w-72 h-28 left-0 top-[89px] absolute">
+                            <div className="w-48 left-[50px] top-0 absolute text-center text-white text-3xl font-semibold font-['Nunito Sans']">Photography</div>
+                            <div className="w-72 left-0 top-[58px] absolute text-center text-white text-opacity-70 text-xl font-normal font-['Nunito Sans'] leading-7">We provide Photography services, and of course with the best quality</div>
+                        </div>
+                        <div className="w-16 h-16 left-[115px] top-0 absolute">
+                            <div className="w-8 h-8 left-[19px] top-[18px] absolute justify-center items-center inline-flex">
+                                <div className="w-8 h-8 relative">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="w-96 left-[253px] top-0 absolute text-center text-white text-6xl font-normal font-['Denk One'] leading-10">The Service We Provide For You</div>
+    </div>
+    <div className="w-96 h-96 left-[120px] top-[2945px] absolute">
+        <div className="w-96 h-96 left-0 top-[149px] absolute">
+            <div className="w-96 h-72 left-0 top-0 absolute">
+                <div className="w-96 h-72 left-0 top-0 absolute bg-zinc-900 rounded-2xl" />
+                <img className="w-80 h-64 left-[24px] top-[24px] absolute rounded-xl" src="https://via.placeholder.com/336x253" />
+            </div>
+            <div className="w-96 h-72 left-[408px] top-[58px] absolute">
+                <div className="w-96 h-72 left-0 top-0 absolute bg-zinc-900 rounded-2xl" />
+                <img className="w-80 h-64 left-[24px] top-[24px] absolute rounded-xl" src="https://via.placeholder.com/336x253" />
+            </div>
+            <div className="w-96 h-72 left-[816px] top-[116px] absolute">
+                <div className="w-96 h-72 left-0 top-0 absolute bg-zinc-900 rounded-2xl" />
+                <img className="w-80 h-64 left-[24px] top-[24px] absolute rounded-xl" src="https://via.placeholder.com/336x253" />
+            </div>
+        </div>
+        <div className="left-0 top-0 absolute text-white text-6xl font-extrabold font-['Nunito Sans']">Our Awesome Portofolio</div>
+        <div className="w-12 h-2 left-[576px] top-[616px] absolute">
+            <div className="w-4 h-2 left-0 top-0 absolute bg-indigo-600 rounded-lg" />
+            <div className="w-2 h-2 left-[24px] top-0 absolute bg-neutral-900 rounded-full" />
+            <div className="w-2 h-2 left-[40px] top-0 absolute bg-neutral-900 rounded-full" />
+        </div>
+    </div>
+    <div className="w-96 h-96 left-[-312px] top-[2049.59px] absolute origin-top-left rotate-[-54.37deg] bg-gradient-to-b from-indigo-600 to-indigo-600 rounded-full blur-3xl" />
+    <div className="w-28 h-32 left-[618.40px] top-[666px] absolute">
+    </div>
+    <div className="w-28 h-32 left-[184px] top-[1948px] absolute">
+    </div>
+    <div className="w-12 h-14 left-[1269px] top-[184px] absolute">
+        <div className="w-10 h-10 left-0 top-0 absolute rounded-full border-2 border-white" />
+        <div className="w-10 h-10 left-[11px] top-[20px] absolute rounded-full border border-white" />
+    </div>
+    <div className="w-12 h-14 left-[159px] top-[4119px] absolute">
+        <div className="w-10 h-10 left-0 top-0 absolute rounded-full border-2 border-white" />
+        <div className="w-10 h-10 left-[11px] top-[20px] absolute rounded-full border border-white" />
+    </div>
+    <div className="origin-top-left rotate-[-27.37deg] w-16 h-20 left-[1190px] top-[3003.50px] absolute">
+        <div className="w-12 h-12 left-0 top-0 absolute origin-top-left rotate-[-27.37deg] rounded-full border-4 border-white" />
+        <div className="w-12 h-12 left-[23.05px] top-[15.44px] absolute origin-top-left rotate-[-27.37deg] rounded-full border border-white" />
+    </div>
+    <div className="w-12 h-12 left-[1283px] top-[716px] absolute" />
+    <div className="w-10 h-10 left-[1260.13px] top-[2084.03px] absolute origin-top-left rotate-[-31.42deg]" />
+    <div className="w-10 h-10 left-[1268px] top-[3806px] absolute" />
+    <div className="w-10 h-10 left-[110.01px] top-[2788.03px] absolute origin-top-left rotate-[25.34deg]" />
+    <div className="w-96 h-96 left-[952.50px] top-[259px] absolute origin-top-left rotate-[23.64deg] rounded-3xl border-2 border-white" />
+    <div className="w-96 h-96 left-[750px] top-[107px] absolute">
+        <div className="w-96 h-96 left-[80.79px] top-[217.72px] absolute">
+            <div className="w-96 h-96 left-[151px] top-0 absolute origin-top-left rotate-[23.64deg] bg-indigo-600 rounded-3xl border-4 border-white" />
+            <div className="w-96 h-96 left-0 top-0 absolute">
+                <div className="w-96 h-96 left-[150.50px] top-0 absolute origin-top-left rotate-[23.64deg] bg-indigo-600 rounded-3xl border-4 border-white" />
+            </div>
+        </div>
+        <div className="w-96 h-96 left-0 top-0 absolute">
+            <img className="w-96 h-96 left-[-108px] top-[73px] absolute" src="https://via.placeholder.com/908x813" />
+        </div>
+    </div>
+</main>
   )
 }
