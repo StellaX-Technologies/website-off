@@ -1,21 +1,28 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-
+import Footer from './footer'
 import NavBar from './navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-  <main className="bg-zinc-900">
-    <div className="w-96 h-96 left-[1800.24px] top-[3130.31px] absolute origin-top-left rotate-[-125.63deg] bg-gradient-to-b from-indigo-600 to-indigo-600 rounded-full blur-3xl" />
-    <div className="w-96 h-96 left-[998.44px] top-[305px] absolute origin-top-left rotate-[65.71deg] bg-gradient-to-b from-amber-500 to-pink-500 rounded-full blur-3xl" />
-    <div className="w-96 h-96 left-[1663.79px] top-[1759px] absolute origin-top-left rotate-[65.71deg] bg-gradient-to-b from-amber-500 to-pink-500 rounded-full blur-3xl" />
-    <div className="w-96 h-96 left-[-401.52px] top-[231.97px] absolute origin-top-left rotate-[-54.37deg] bg-gradient-to-b from-indigo-600 to-indigo-600 rounded-full blur-3xl" />
+  <main className="bg-zinc-900 h-full">
+    <div className="w-96 h-96 left-[1000.24px] top-[3230.31px] absolute origin-top-left rotate-[-125.63deg] bg-gradient-to-b from-indigo-600 to-indigo-600 rounded-full blur-3xl bg-opacity-10" />
+    <div className="w-96 h-96 left-[998.44px] top-[305px] absolute origin-top-left rotate-[65.71deg] bg-gradient-to-b from-amber-500 to-pink-500 rounded-full blur-3xl bg-opacity-10" />
+    <div className="w-96 h-96 left-[1663.79px] top-[1759px] absolute origin-top-left rotate-[65.71deg] bg-gradient-to-b from-amber-500 to-pink-500 rounded-full blur-3xl bg-opacity-10" />
+    <div className="w-96 h-96 right-[401.52px] top-[231.97px] absolute origin-top-left rotate-[-54.37deg] bg-gradient-to-b from-indigo-600 to-indigo-600 rounded-full blur-3xl bg-opacity-10" />
     <NavBar/>
     <div className="w-96 h-96 left-[120px] top-[230px] absolute">
         <p className="w-96 left-0 top-0 absolute text-white text-7xl font-normal font-['Denk One'] leading-12">Build Your Awesome Platform</p>
-        <p className="w-96 left-[3px] top-[276px] absolute text-white text-opacity-70 text-xl font-normal font-['Nunito Sans'] leading-10">StellaX Technologies is an agency that offers several services such as UI/UX Design to developers, we will provide the best service for those of you who use our services.</p>
+        <p className="w-96 left-[3px] top-[276px] absolute text-white text-opacity-70 text-xl font-normal font-['Nunito Sans'] leading-12">StellaX Technologies is an agency that offers several services such as UI/UX Design to developers, we will provide the best service for those of you who use our services.</p>
+    </div>
+    <div className="w-96 h-96 left-[952.50px] top-[259px] absolute origin-top-left rotate-[23.64deg] rounded-3xl border-2 border-white" />
+    <div className="w-96 h-96 left-[750px] top-[107px] absolute">
+        <div className="w-96 h-96 left-[151px] top-0 absolute origin-top-left rotate-[23.64deg] bg-indigo-600 rounded-3xl border-4 border-white" />
+        <div className="w-96 h-96 left-0 top-0 absolute">
+            <Image className="" src="/stellax-website\public\young-attractive-handsome-guy-feels-delighted-gladden-amazed-min_ccexpress1.jpg" alt="Handsome-Guy" width={908} height={813}/>
+        </div>
     </div>
     
     <div className="h-96 left-[120px] top-[971px] absolute">
@@ -37,23 +44,11 @@ export default function Home() {
             <div className="w-52 left-0 top-[17px] absolute text-center text-white text-xl font-bold font-['Nunito Sans']">Contact us</div>
         </div>
     </div>
-    <div className="w-96 h-10 left-[120px] top-[4293px] absolute">
-        <div className="w-44 h-10 left-0 top-0 absolute">
-            <div className="left-[48px] top-0 absolute text-white text-3xl font-bold font-['Montserrat'] leading-10">STELLAX</div>
-            <img className="w-10 h-10 left-0 top-0 absolute" src="https://via.placeholder.com/40x40" />
-        </div>
-        <div className="w-96 h-6 left-[384px] top-[7px] absolute">
-            <div className="left-0 top-0 absolute text-center text-white text-opacity-70 text-lg font-normal font-['Nunito Sans']">Support</div>
-            <div className="left-[106px] top-0 absolute text-center text-white text-opacity-70 text-lg font-normal font-['Nunito Sans']">Privacy Policy</div>
-            <div className="left-[257px] top-0 absolute text-center text-white text-opacity-70 text-lg font-normal font-['Nunito Sans']">Terms and Conditions</div>
-        </div>
-        <div className="w-72 left-[915px] top-[1px] absolute text-right text-white text-opacity-70 text-base font-normal font-['Nunito Sans'] leading-9">© 2023 StellaX, All Rights Reserved</div>
-    </div>
+    
     <div className="w-52 h-14 left-[123px] top-[673px] absolute">
         <div className="w-52 h-14 left-0 top-0 absolute bg-indigo-600 rounded" />
         <div className="w-36 h-7 left-[27px] top-[16px] absolute justify-center items-center gap-2 inline-flex">
             <div className="text-white text-xl font-bold font-['Nunito Sans']">Our Services</div>
-            <div className="w-6 h-6 relative" />
         </div>
     </div>
     <div className="w-96 left-[120px] top-[1981px] absolute">
@@ -153,24 +148,24 @@ export default function Home() {
                 </div>
             </div>
         </div>
-        <div className="w-96 left-[253px] top-0 absolute text-center text-white text-6xl font-normal font-['Denk One'] leading-10">The Service We Provide For You</div>
+        <div className="w-96 left-[253px] top-0 absolute text-center text-white text-6xl font-normal font-['Denk One'] leading-12">The Service We Provide For You</div>
     </div>
     <div className="w-96 h-96 left-[120px] top-[2945px] absolute">
         <div className="w-96 h-96 left-0 top-[149px] absolute">
             <div className="w-96 h-72 left-0 top-0 absolute">
                 <div className="w-96 h-72 left-0 top-0 absolute bg-zinc-900 rounded-2xl" />
-                <img className="w-80 h-64 left-[24px] top-[24px] absolute rounded-xl" src="https://via.placeholder.com/336x253" />
+                <Image className="left-[24px] top-[24px] absolute rounded-xl" src="/" alt="" width={320} height={256}/>
             </div>
             <div className="w-96 h-72 left-[408px] top-[58px] absolute">
                 <div className="w-96 h-72 left-0 top-0 absolute bg-zinc-900 rounded-2xl" />
-                <img className="w-80 h-64 left-[24px] top-[24px] absolute rounded-xl" src="https://via.placeholder.com/336x253" />
+                <Image className="left-[24px] top-[24px] absolute rounded-xl" src="/" alt="" width={320} height={256}/>
             </div>
             <div className="w-96 h-72 left-[816px] top-[116px] absolute">
                 <div className="w-96 h-72 left-0 top-0 absolute bg-zinc-900 rounded-2xl" />
-                <img className="w-80 h-64 left-[24px] top-[24px] absolute rounded-xl" src="https://via.placeholder.com/336x253" />
+                <Image className="left-[24px] top-[24px] absolute rounded-xl" src="/" alt="" width={320} height={256}/>
             </div>
         </div>
-        <div className="left-0 top-0 absolute text-white text-6xl font-extrabold font-['Nunito Sans']">Our Awesome Portofolio</div>
+        <div className="left-0 top-0 absolute text-white text-6xl font-extrabold font-['Nunito Sans'] line">Our Awesome Portofolio</div>
         <div className="w-12 h-2 left-[576px] top-[616px] absolute">
             <div className="w-4 h-2 left-0 top-0 absolute bg-indigo-600 rounded-lg" />
             <div className="w-2 h-2 left-[24px] top-0 absolute bg-neutral-900 rounded-full" />
@@ -182,6 +177,28 @@ export default function Home() {
     </div>
     <div className="w-28 h-32 left-[184px] top-[1948px] absolute">
     </div>
+    <div className="origin-top-left rotate-[-27.37deg] w-16 h-20 left-[1190px] top-[3003.50px] absolute">
+        <div className="w-12 h-12 left-0 top-0 absolute origin-top-left rotate-[-27.37deg] rounded-full border-4 border-white" />
+        <div className="w-12 h-12 left-[23.05px] top-[15.44px] absolute origin-top-left rotate-[-27.37deg] rounded-full border border-white" />
+    </div>
+    <div className="left-[1260.13px] top-[2084.03px] absolute origin-top-left rotate-[-31.42deg]"><Image 
+    src="add.svg"
+    alt=""
+    width={40}
+    height={40}
+    /></div>
+    <div className="w-10 h-10 left-[1268px] top-[3806px] absolute"><Image 
+    src="Group1.svg"
+    alt=""
+    width={40}
+    height={40}
+    /></div>
+    <div className="w-10 h-10 left-[110.01px] top-[2788.03px] absolute origin-top-left rotate-[25.34deg]"><Image 
+    src=".svg"
+    alt=""
+    width={40}
+    height={40}
+    /></div>
     <div className="w-12 h-14 left-[1269px] top-[184px] absolute">
         <div className="w-10 h-10 left-0 top-0 absolute rounded-full border-2 border-white" />
         <div className="w-10 h-10 left-[11px] top-[20px] absolute rounded-full border border-white" />
@@ -190,26 +207,8 @@ export default function Home() {
         <div className="w-10 h-10 left-0 top-0 absolute rounded-full border-2 border-white" />
         <div className="w-10 h-10 left-[11px] top-[20px] absolute rounded-full border border-white" />
     </div>
-    <div className="origin-top-left rotate-[-27.37deg] w-16 h-20 left-[1190px] top-[3003.50px] absolute">
-        <div className="w-12 h-12 left-0 top-0 absolute origin-top-left rotate-[-27.37deg] rounded-full border-4 border-white" />
-        <div className="w-12 h-12 left-[23.05px] top-[15.44px] absolute origin-top-left rotate-[-27.37deg] rounded-full border border-white" />
-    </div>
-    <div className="w-12 h-12 left-[1283px] top-[716px] absolute" />
-    <div className="w-10 h-10 left-[1260.13px] top-[2084.03px] absolute origin-top-left rotate-[-31.42deg]" />
-    <div className="w-10 h-10 left-[1268px] top-[3806px] absolute" />
-    <div className="w-10 h-10 left-[110.01px] top-[2788.03px] absolute origin-top-left rotate-[25.34deg]" />
-    <div className="w-96 h-96 left-[952.50px] top-[259px] absolute origin-top-left rotate-[23.64deg] rounded-3xl border-2 border-white" />
-    <div className="w-96 h-96 left-[750px] top-[107px] absolute">
-        <div className="w-96 h-96 left-[80.79px] top-[217.72px] absolute">
-            <div className="w-96 h-96 left-[151px] top-0 absolute origin-top-left rotate-[23.64deg] bg-indigo-600 rounded-3xl border-4 border-white" />
-            <div className="w-96 h-96 left-0 top-0 absolute">
-                <div className="w-96 h-96 left-[150.50px] top-0 absolute origin-top-left rotate-[23.64deg] bg-indigo-600 rounded-3xl border-4 border-white" />
-            </div>
-        </div>
-        <div className="w-96 h-96 left-0 top-0 absolute">
-            <img className="w-96 h-96 left-[-108px] top-[73px] absolute" src="https://via.placeholder.com/908x813" />
-        </div>
-    </div>
+
+    <Footer/>
 </main>
   )
 }
