@@ -9,7 +9,7 @@ export default function NavBar() {
                 <div className="left-[48px] top-0 absolute text-white text-3xl font-bold font-['Montserrat'] leading-10">STELLAX</div>
             </div>
             <div className="left-[523px] top-[50px] right-[507px] absolute justify-end items-start gap-10 inline-flex">
-                <div className="text-right"><span className="text-indigo-600 text-lg font-semibold font-['Nunito Sans']"><p>Home</p></span></div>
+                <div className="text-right"><span className="text-indigo-600 text-lg font-semibold font-['Nunito Sans']"><Link href="./index">Home</Link></span></div>
                 <div className="text-right text-white text-opacity-70 text-lg font-normal font-['Nunito Sans']">Services</div>
                 <div className="text-right text-white text-opacity-70 text-lg font-normal font-['Nunito Sans'] overflow-visible w-auto"><p>Our Project</p></div>
                 <div className="text-right text-white text-opacity-70 text-lg font-normal font-['Nunito Sans'] overflow-visible w-auto"><p>About us</p></div>
